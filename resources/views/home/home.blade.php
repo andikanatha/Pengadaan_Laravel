@@ -54,7 +54,7 @@
           <h1>Memberikan Kesempatan Pada UMKM</h1>
           <h2>Kami Memberikan Kesempatan kepada UMKM yang ingin mengajukan pengajuan barang atau jasa yang dimiliki.</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Daftar Sekarang</a>
+            <a href="/registrasi" class="btn-get-started scrollto">Daftar Sekarang</a>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
@@ -161,7 +161,7 @@
             <p>Kamu Dapat daftarkan usaha kamu agar dapat mengajukan pengajuan dari setiap bidang yang dibutuhkan</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Daftar Sekarang</a>
+            <a class="cta-btn align-middle" href="/registrasi">Daftar Sekarang</a>
           </div>
         </div>
 
