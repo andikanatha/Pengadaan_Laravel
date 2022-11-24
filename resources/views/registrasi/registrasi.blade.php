@@ -57,10 +57,35 @@
         <div class="section-title">
             <h2>REGISTRASI</h2>
             <p>Silahkan daftarkan usaha anda.</p>
-        </div>
         <div class="row">
+            @if(Session::has('succes'))
+            </div>
+            <div class="alert alert-success" role="alert">
+
+                {{Session::get('succes')}}
+            </div>
+            @endif
+            @if(Session::has('error'))
+            <div class="alert alert-danger" role="alert">
+                {{Session::get('error')}}
+            </div>
+            @endif
+            @if(count($errors) > 0)
+                <div class="alert alert-danger">
+                    <div class="alert alert-danger" role="alert">
+                        This is a danger alert—check it out!
+                    </div>
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+            </div>
             <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
-                <form action="" method="post" role="form" class="php-email-form">
+                <form action="/simpanRegistrasi" method="post" role="form" class="php-email-form">
+                    {{ csrf_field() }}
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="name">Nama Usaha</label>
