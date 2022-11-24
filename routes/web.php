@@ -15,5 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'App\Http\Controllers\Home@index');
-Route::get('/registrasi', 'App\Http\Controllers\Registrasi@index');
+Route::get('/register', 'App\Http\Controllers\Registrasi@index');
 Route::post('/simpanRegistrasi', 'App\Http\Controllers\Registrasi@registrasi');
+Route::get('/loginSuplier', 'App\Http\Controllers\Suplier@index');

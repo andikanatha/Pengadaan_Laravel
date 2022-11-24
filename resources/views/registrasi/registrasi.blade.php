@@ -61,8 +61,8 @@
             @if(Session::has('succes'))
             </div>
             <div class="alert alert-success" role="alert">
-
                 {{Session::get('succes')}}
+                Data Berhasil Ditambahkan
             </div>
             @endif
             @if(Session::has('error'))
@@ -73,7 +73,7 @@
             @if(count($errors) > 0)
                 <div class="alert alert-danger">
                     <div class="alert alert-danger" role="alert">
-                        This is a danger alert—check it out!
+                        Data anda gagal ditambahkan, Coba Ulang !
                     </div>
                     <ul>
                         @foreach($errors->all() as $error)
